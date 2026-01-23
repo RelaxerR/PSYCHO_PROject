@@ -340,3 +340,622 @@ html {
         display: none; /* В реальном проекте здесь будет бургер-меню */
     }
 }
+
+.logo-brand {
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--apple-black);
+}
+.logo-accent {
+    color: var(--apple-blue); /* Подчеркиваем профессиональный подтекст */
+}
+.logo-suffix {
+    font-weight: 300;
+    color: #86868b;
+}
+
+/* Специальный градиент для заголовков в стиле Apple */
+.gradient-text {
+    background: linear-gradient(90deg, #0071e3, #42a5f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.badge {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--apple-blue);
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hero-home {
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.main-headline {
+    font-size: 80px; /* Очень крупно для Apple-стиля */
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin-bottom: 25px;
+}
+
+.hero-subheadline {
+    font-size: 24px;
+    color: #86868b;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.4;
+}
+
+/* Стили кнопок */
+.btn-apple-primary {
+    display: inline-block;
+    background: var(--apple-black);
+    color: white;
+    padding: 18px 36px;
+    border-radius: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+
+.btn-apple-primary:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+.btn-apple-link {
+    display: inline-block;
+    margin-left: 25px;
+    color: var(--apple-blue);
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.btn-apple-link:hover {
+    text-decoration: underline;
+}
+
+/* Стили для Bento-карточек в секции проблемы */
+.bento-content {
+    max-width: 500px;
+}
+
+.stat-number {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--apple-black);
+}
+
+.stat-desc {
+    font-size: 16px;
+    color: #6e6e73;
+    margin-top: 10px;
+}
+
+/* Стили футера (убедитесь, что они уже есть из предыдущих шагов) */
+.global-footer {
+    background-color: var(--apple-gray);
+    padding: 20px 0 40px;
+    margin-top: 80px; /* Увеличим отступ от контента */
+    font-size: 12px;
+    color: #6e6e73;
+}
+
+/* ... (остальные стили футера, как в предыдущем шаге) ... */
+.footer-column a:hover {
+    color: var(--apple-blue); /* Используем наш акцентный синий цвет */
+    text-decoration: underline;
+}
+
+.footer-legal-text a {
+    color: var(--apple-blue);
+    text-decoration: none;
+}
+
+/* Герой-секция тестов */
+.section-hero-tests {
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+/* Главная карточка теста */
+.main-test-card {
+    background: var(--apple-gray);
+    border-radius: 28px;
+    display: flex;
+    overflow: hidden;
+    min-height: 450px;
+    margin-bottom: 60px;
+    padding: 60px;
+    align-items: center;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.test-card-content {
+    flex: 1;
+    z-index: 2;
+}
+
+.test-duration {
+    font-size: 14px;
+    font-weight: 600;
+    color: #86868b;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.test-card-title {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.test-card-text {
+    font-size: 20px;
+    color: #424245;
+    margin-bottom: 35px;
+    max-width: 450px;
+}
+
+/* Сетка дополнительных тестов */
+.grid-label {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.item-category {
+    font-size: 12px;
+    color: var(--apple-blue);
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.bento-item h4 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.item-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--apple-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Эффект при наведении на карточки */
+.bento-item:hover {
+    background: #ebebef;
+    transition: var(--transition);
+}
+
+/* Базовое состояние главной карточки */
+.main-test-card {
+    background: var(--apple-gray);
+    border-radius: 28px;
+    display: flex;
+    overflow: hidden;
+    min-height: 450px;
+    margin-bottom: 60px;
+    padding: 60px;
+    align-items: center;
+    position: relative;
+    
+    /* Тонкая настройка перехода */
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+                background-color 0.4s ease, 
+                box-shadow 0.4s ease;
+    
+    /* Едва заметная граница и тень в покое */
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); 
+}
+
+/* Эффект при наведении (как в App Store) */
+.main-test-card:hover {
+    background-color: #fcfcfd; /* Легкое осветление */
+    transform: scale(1.005); /* Почти незаметное увеличение */
+    
+    /* "Мягкая" тень Apple: большая, размытая и очень прозрачная */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04); 
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Стили для остальных карточек в сетке (Bento) */
+.bento-item {
+    background: var(--apple-gray);
+    border-radius: 28px;
+    padding: 40px;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    border: 1px solid transparent;
+}
+
+.bento-item:hover {
+    background-color: #ffffff;
+    transform: translateY(-4px); /* Подъем вверх вместо наклона */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+.pulse-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--apple-blue);
+    border-radius: 50%;
+    margin-right: 6px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.section-hero-interview {
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два видео в ряд для акцента */
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.video-card {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.video-preview-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.play-button {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.video-card:hover .video-preview-wrapper {
+    transform: scale(1.02);
+}
+
+.video-card:hover .play-button {
+    background: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+}
+
+.video-card:hover .play-button svg path {
+    fill: var(--apple-black);
+}
+
+.video-info {
+    padding: 20px 5px;
+}
+
+.student-year {
+    font-size: 12px;
+    color: var(--apple-blue);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.video-info h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    letter-spacing: -0.01em;
+}
+
+.video-info p {
+    font-size: 16px;
+    color: #6e6e73;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .video-grid { grid-template-columns: 1fr; }
+}
+
+.section-hero-stories {
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+/* Сетка в стиле журнальной верстки */
+.editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.story-card {
+    position: relative;
+    height: 540px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: var(--apple-gray);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.story-card:hover {
+    transform: scale(0.98); /* Легкое сжатие при нажатии/наведении */
+}
+
+.story-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.8s ease;
+}
+
+.story-card:hover .story-image {
+    transform: scale(1.05);
+}
+
+/* Градиентное наложение для читаемости текста */
+.story-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+    color: white;
+}
+
+.story-tag {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.story-quote {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.story-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Вариант без фото */
+.story-card.text-only .story-overlay {
+    background: #f5f5f7;
+    color: var(--apple-black);
+}
+.story-card.text-only .story-quote {
+    color: var(--apple-black);
+}
+.story-card.text-only .story-footer {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.story-link {
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .editorial-grid { grid-template-columns: 1fr; }
+    .story-card { height: 450px; }
+}
+
+.section-hero-edu {
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+.edu-compare-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    border-top: 1px solid #d2d2d7;
+    padding-top: 40px;
+    margin-bottom: 80px;
+}
+
+.edu-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.edu-icon {
+    font-size: 48px;
+    font-weight: 700;
+    color: #d2d2d7;
+    margin-bottom: 20px;
+}
+
+.edu-icon.accent {
+    color: var(--apple-blue);
+}
+
+.edu-column h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.edu-duration {
+    font-size: 14px;
+    color: #86868b;
+    margin-bottom: 25px;
+}
+
+.edu-list {
+    list-style: none;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.edu-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f5f5f7;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.edu-reality {
+    background: var(--apple-gray);
+    padding: 20px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Стеклянная карточка внизу */
+.glass-card {
+    background: rgba(245, 245, 247, 0.7);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.glass-card h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .edu-compare-grid { grid-template-columns: 1fr; }
+}
+
+.search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 15px;
+}
+
+#search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--apple-black);
+    padding: 0 20px;
+    outline: none;
+}
+
+.close-search {
+    background: none;
+    border: none;
+    color: var(--apple-blue);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.search-suggestions {
+    margin-top: 40px;
+}
+
+.search-suggestions h4 {
+    font-size: 12px;
+    color: #86868b;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.search-suggestions ul {
+    list-style: none;
+}
+
+.search-suggestions ul li {
+    margin-bottom: 12px;
+}
+
+.search-suggestions a {
+    text-decoration: none;
+    color: var(--apple-black);
+    font-size: 21px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.search-suggestions a:hover {
+    color: var(--apple-blue);
+}

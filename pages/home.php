@@ -1,38 +1,50 @@
-<!-- Hero-секция: Главный акцент (как презентация iPhone) -->
-<section class="hero-section">
-    <div class="hero-content reveal">
-        <h1 class="hero-title">Найдите гармонию с собой.</h1>
-        <p class="hero-subtitle">Современный подход к психотерапии в эстетике спокойствия.</p>
-        <div class="hero-links">
-            <a href="#services" class="button-primary">Начать путь</a>
-            <a href="#about" class="button-link">Узнать о методе ></a>
+<!-- Секция Hero: Главный фокус на тесте -->
+<section class="hero-home">
+    <div class="container">
+        <div class="hero-text-wrap reveal">
+            <span class="badge">Профориентация 2026</span>
+            <h1 class="main-headline">Психология. <br><span class="gradient-text">Призвание или иллюзия?</span></h1>
+            <p class="hero-subheadline">
+                Узнайте, готовы ли вы к реальным вызовам профессии. <br>
+                Пройдите глубокое тестирование, разработанное экспертами для абитуриентов.
+            </p>
+            <div class="cta-group">
+                <a href="?page=tests" class="btn-apple-primary">Пройти тест</a>
+                <a href="#about-project" class="btn-apple-link">О методике проекта →</a>
+            </div>
         </div>
     </div>
-    <!-- Сюда программист может вставить премиальное изображение или Canvas-анимацию -->
-    <div class="hero-image-container"></div>
 </section>
 
-<!-- Bento Grid: Сетка услуг или преимуществ -->
-<section class="grid-section">
+<!-- Секция Проблематики: Контраст ожиданий и реальности -->
+<section id="about-project" class="problem-section">
     <div class="container">
         <div class="bento-grid">
-            <!-- Большая карточка -->
+            <!-- Большая карточка: Миссия -->
             <div class="bento-item wide reveal">
-                <div class="item-text">
-                    <h3>Индивидуальная работа</h3>
-                    <p>Глубокое погружение в ваши запросы.</p>
+                <div class="bento-content">
+                    <h2 class="bento-title">За гранью медийных мифов</h2>
+                    <p class="bento-text">
+                        Популяризация психологии создала образ «легкой» профессии. 
+                        Мы помогаем увидеть реальность: системное обучение, этические дилеммы 
+                        и эмоциональную нагрузку еще до подачи документов.
+                    </p>
+                </div>
+                <div class="bento-visual">
+                    <!-- Здесь программист может добавить минималистичный график или абстракцию -->
                 </div>
             </div>
-            <!-- Маленькие карточки -->
+
+            <!-- Карточка: Статистика -->
             <div class="bento-item reveal">
-                <div class="item-text">
-                    <h3>Тесты</h3>
-                </div>
+                <h3 class="stat-number">40%</h3>
+                <p class="stat-desc">студентов-психологов разочаровываются в выборе на 2-м курсе.</p>
             </div>
+
+            <!-- Карточка: Решение -->
             <div class="bento-item reveal">
-                <div class="item-text">
-                    <h3>Блог</h3>
-                </div>
+                <h3 class="stat-title">Осознанность</h3>
+                <p class="stat-desc">Наш комплекс оценивает вашу готовность к эмпатии и выгоранию.</p>
             </div>
         </div>
     </div>
