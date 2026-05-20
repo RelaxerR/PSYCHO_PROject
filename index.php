@@ -13,12 +13,12 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 // Безопасный список доступных страниц
 $allowed_pages = [
-    'home'      => 'pages/home.php',
-    'tests'     => 'pages/tests.php',
-    'interview' => 'pages/interview.php',
-    'library'   => 'pages/library.php',
-    'education' => 'pages/education.php',
-    'stories'   => 'pages/stories.php'
+    'home' => 'pages/home.php',
+    'tests' => 'pages/tests.php',
+    'about' => 'pages/about.php',       // Вместо interview
+    'programs' => 'pages/programs.php', // Вместо education
+    'faculty' => 'pages/faculty.php',   // Новая страница
+    'media' => 'pages/media.php'        // Вместо stories
 ];
 
 // Проверяем существование файла и подключаем его
