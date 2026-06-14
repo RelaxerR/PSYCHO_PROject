@@ -9,12 +9,13 @@
         <!-- Список разделов -->
         <ul class="nav-list">
             <li><a href="index.php" class="nav-link">Главная</a></li>
-            <li><a href="?page=tests" class="nav-link">Тесты</a></li>
-            <li><a href="?page=interview" class="nav-link">Интервью</a></li>
-            <li><a href="?page=library" class="nav-link">Библиотека</a></li>
-            <li><a href="?page=education" class="nav-link">Образование</a></li>
-            <li><a href="?page=stories" class="nav-link">Истории</a></li>
+            <li><a href="?page=about" class="nav-link">Почему УдГУ?</a></li>
+            <li><a href="?page=programs" class="nav-link">Программы</a></li>
+            <li><a href="?page=faculty" class="nav-link">Преподаватели</a></li>
+            <li><a href="?page=tests" class="nav-link">Тест</a></li>
+            <li><a href="?page=media" class="nav-link">Мы в соцсетях</a></li>
         </ul>
+
 
         <!-- Кнопка поиска -->
         <div class="nav-actions">
